@@ -1,0 +1,216 @@
+/* Couleurs principales de Monaco : Rouge, Blanc et Noir */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: url('images/458113.jpg') no-repeat center center/cover; /* Image de fond */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    height: 500px; /* Hauteur du header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Superposition sombre pour une meilleure lisibilité */
+    z-index: 1;
+}
+
+nav, .hero {
+    z-index: 2; /* Pour s'assurer que le contenu reste au-dessus de la superposition */
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero .btn {
+    background-color: #ffffff;
+    color: #D32F2F;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card img {
+    width: 100%; /* Les images prendront toute la largeur du conteneur */
+    height: 300px; /* Hauteur fixe pour les images */
+    object-fit: cover; /* Coupe l'image si elle dépasse la taille du conteneur tout en maintenant le ratio */
+    border-radius: 5px; /* Optionnel : garde les coins arrondis */
+}
+
+.hero {
+    background: url('images/monaco-view.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero .btn {
+    background-color: #ffffff;
+    color: #D32F2F;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #D32F2F;
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Styles pour les cartes d'astuces */
+.grid-tips {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Quatre colonnes */
+    gap: 20px; /* Espacement entre les cartes */
+    margin-top: 20px;
+}
+
+.tip-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px); /* Légère animation au survol */
+}
+
+.tip-card h3 {
+    font-size: 20px;
+    color: #D32F2F;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #D32F2F;
+    text-decoration: none;
+}
+
+#contact h2 {
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 18px;
+}
